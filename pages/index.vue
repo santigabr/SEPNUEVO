@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-500/20 backdrop-blur-sm h-[80dvh] rounded-b-[60px] grid gap-5 place-content-center">
+  <div class="bg-500/20 backdrop-blur-sm h-[90dvh] rounded-b-[30px] md:rounded-b-[60px] overflow-hidden grid gap-5 place-content-center animate-slidein opacity-0 [--slidein-delay:200ms]">
     <NuxtImg src="/hero.png" height="1177px" width="1440px" class="absolute object-cover w-screen overflow-hidden -z-[10]" alt="hero" />
     <div class="font-bold antialiased tracking-tight animate-slidein opacity-0 [--slidein-delay:300ms] text-5xl md:text-8xl text-center">
       <p>
