@@ -17,7 +17,7 @@ const switchLocale = useSwitchLocalePath()
 </script>
 
 <template>
-  <header class="backdrop-blur-sm sticky top-0 w-full flex justify-between z-40 py-5 px-4 items-center">
+  <header class="backdrop-blur-sm bg-[#8b751b]/90 sticky top-0 w-full flex justify-between z-40 py-5 px-4 md:px-8 items-center">
     <h2 class="text-4xl underline decoration-500">
       SEP
     </h2>
@@ -36,7 +36,7 @@ const switchLocale = useSwitchLocalePath()
       </NuxtLink>
 
       <button class="text-4xl sm:hidden order-3 flex items-center" @click="menuOpen = !menuOpen">
-        <UnoIcon :class="[{ 'i-ph-list-thin': !menuOpen, 'i-ph-x-thin': menuOpen }]" />
+        <Icon :name=" menuOpen ? 'i-lucide-x' : 'i-ph-list'" />
       </button>
     </div>
   </header>
