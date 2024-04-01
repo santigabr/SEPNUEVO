@@ -17,7 +17,7 @@ const switchLocale = useSwitchLocalePath()
 </script>
 
 <template>
-  <header class="backdrop-blur-sm bg-[#8b751b]/90 sticky top-0 w-full flex justify-between z-40 py-5 px-4 md:px-8 items-center">
+  <header class="backdrop-blur-sm fixed top-0 w-full flex justify-between z-40 py-5 px-4 md:px-8 items-center">
     <h2 class="text-4xl underline decoration-500">
       SEP
     </h2>
