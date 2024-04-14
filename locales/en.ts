@@ -9,7 +9,7 @@ export default {
       'Security',
       'Scalability',
     ],
-    presentation: 'In SEP we offer',
+    presentation: 'At SEP we offer',
     presentation2: 'We are passionate about creating *unique digital experiences* and functional that drive the online success of our customers. We provide high quality *web development* services, designing custom solutions to meet the specific needs of each business.',
   },
   contactuspage: {
