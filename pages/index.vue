@@ -4,6 +4,8 @@ interface Link {
   href: string
 }
 
+const { data: proyectos } = useFetch('/api/projects')
+
 const { t, tm, rt } = useI18n()
 
 const presentation = t('homepage.presentation')
@@ -36,9 +38,17 @@ const bottonheader2 = tm('header.contact') as Link
     </div>
   </div>
 
-  <div class="">
-    <h2 class="sm:text-5xl text-4xl font-medium pt-10 tracking-tight text-center">
+  <div class="grid gap-5 md:px-8 px-4 py-8 rounded-t-3xl mt-10">
+    <h2 class="sm:text-5xl text-4xl font-medium tracking-tight text-center">
       Proyectos recientes
     </h2>
+    <div class="grid gap-3 grid-cols-2">
+      <div v-for="proyecto in proyectos" :key="proyecto.id" class="bg-gray-500 rounded-xl overflow-hidden">
+        <NuxtImg :src="proyecto.image" width="400" height="300" class="w-full object-cover" />
+        <div class="p-4">
+          <p>{{ proyecto.name }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
